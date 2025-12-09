@@ -1,7 +1,7 @@
 streamlit
 pandas
 requests
-bs4 
+BeautifulSoup 
 numpy
 matplotlib
 seaborn 
