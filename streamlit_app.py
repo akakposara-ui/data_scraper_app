@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 from requests import get
-from bs4 import BeautifulSoup as bs
+#from bs4 import BeautifulSoup as bs
+import BeautifulSoup as bs
 from numpy import nan
 import io
 import matplotlib.pyplot as plt
