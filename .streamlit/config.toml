@@ -1,0 +1,25 @@
+
+[theme]
+
+base = "light"
+
+primaryColor = "#7f8f88ff"
+
+backgroundColor = "#9eb6b1ff"
+
+secondaryBackgroundColor = "#EBF2E8"
+
+textColor = "#333333"
+
+font = "sans serif"
+
+[client]
+
+showSidebarNavigation = true
+
+[global]
+
+dataFrameSerialization = "arrow"
+
+[browser]
+gatherUsageStats = false
