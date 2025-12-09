@@ -7,9 +7,9 @@ primaryColor = "#7f8f88ff"
 
 backgroundColor = "#9eb6b1ff"
 
-secondaryBackgroundColor = "#EBF2E8"
+secondaryBackgroundColor = "#a9c29eff"
 
-textColor = "#333333"
+textColor = "#ffffffff"
 
 font = "sans serif"
 
