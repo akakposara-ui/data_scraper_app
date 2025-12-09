@@ -308,13 +308,6 @@ def display_dashboard(table_name, title):
         return
 
     st.success(f"Loading data from **{table_name}** ({len(df)} lignes)")
-    
-    if 'price' in df.columns and 'gearbox' in df.columns and not df['gearbox'].isnull().all():
-        st.subheader("Price distribution per gearbox")
-        fig, ax = plt.subplots()
-        sns.boxplot(x='gearbox', y='price', data=df, ax=ax)
-        ax.set_title("Boxplot du Prix par Boîte de Vitesse")
-        st.pyplot(fig)
         
 
     st.subheader(f"Top 10 of brand in {title}")
