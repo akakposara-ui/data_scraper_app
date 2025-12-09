@@ -7,65 +7,8 @@ import io
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sqlite3 
-import config_style
 
-
-
-# Thème de couleur personnalisé injecté via CSS dynamique
-st.markdown(f"""
-<style>
-    /* 1. COULEURS DE FOND (Barre Latérale et Corps Principal) */
-    
-    /* Barre Latérale (Sidebar) */
-    section[data-testid="stSidebar"] {{
-        background-color: {config_style.BACKGROUND_SIDEBAR}; 
-        border-right: 1px solid {config_style.ACCENT_COLOR_PRIMARY};
-        transition: background-color 0.5s; /* Ajoute un effet visuel doux */
-    }}
-    
-    /* Corps Principal (Main content) */
-    .stApp {{
-        background-color: {config_style.BACKGROUND_MAIN};
-    }}
-
-    /* 2. TYPOGRAPHIE ET ACCENTUATION */
-    
-    /* Titre principal (H1) */
-    h1 {{
-        color: {config_style.FONT_COLOR_HEADER}; 
-        font-size: 2.5em;
-        border-bottom: 2px solid {config_style.ACCENT_COLOR_PRIMARY}; 
-        padding-bottom: 5px;
-    }}
-    
-    /* Sous-titres (H3) */
-    h3 {{
-        color: {config_style.FONT_COLOR_SECONDARY};
-        font-weight: 600;
-        padding-top: 10px;
-    }}
-    
-    /* Texte général */
-    body, p, div, span, label {{
-        color: {config_style.FONT_COLOR_PRIMARY};
-    }}
-    
-    /* Améliorer les boutons (Download et Link) */
-    .stDownloadButton button, .stLinkButton a, button {{
-        background-color: {config_style.ACCENT_COLOR_PRIMARY}; 
-        color: white !important;
-        border-radius: 8px;
-        transition: background-color 0.3s;
-    }}
-    
-    /* Couleur au survol (Hover) */
-    .stDownloadButton button:hover, .stLinkButton a:hover, button:hover {{
-        background-color: {config_style.ACCENT_COLOR_SECONDARY};
-        color: white;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère au survol */
-    }}
-</style>
-""", unsafe_allow_html=True)
+  
 
 # Scraping about motos and scooters
 def scrape_motos_scooters(num_pages):
